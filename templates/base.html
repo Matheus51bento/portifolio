@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Matheus Bento - Portifólio: Desenvolvedor {% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'logo/logo.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base_style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;500;600;700&family=Dancing+Script:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+    <img src="{% static 'logo/logotipo.png' %}" height="40" alt="logotipo Matheus Bento">
+    <div>
+        <ul class="menu">
+            <li>home</li>
+            <li>about</li>
+            <li>projects</li>
+            <li>contact</li>
+        </ul>
+    </div>
+
+</header>
+
+<main>
+    <div class="container start">
+        <img id="perfil" src="{% static 'images/matheus.jpeg' %}" width="150" alt="foto dde matheus">
+    </div>
+    <h1>About Me</h1>
+    <h1>Projects</h1>
+    <h1>Contact</h1>
+
+    {% block content %}
+
+    {% endblock %}
+</main>
+
+<footer>
+    <h2>footer</h2>
+</footer>
+
+</body>
+</html>

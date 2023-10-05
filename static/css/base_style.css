@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+    /*font-family: 'Dancing Script', cursive;*/
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+header {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu li {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.start {
+    margin-top: 18px;
+    background-image: url("../images/fundo.png");
+}
+
+#perfil {
+    border-radius: 10%;
+}
+
+.container {
+    display: flex;
+}
