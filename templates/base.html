@@ -11,38 +11,119 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;500;600;700&family=Dancing+Script:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1585978672.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header>
+<header id="head">
 
     <img src="{% static 'logo/logotipo.png' %}" height="40" alt="logotipo Matheus Bento">
     <div>
         <ul class="menu">
-            <li>home</li>
-            <li>about</li>
-            <li>projects</li>
-            <li>contact</li>
+            <li><a href="#head">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </div>
 
 </header>
 
 <main>
-    <div class="container start">
-        <img id="perfil" src="{% static 'images/matheus.jpeg' %}" width="150" alt="foto dde matheus">
-    </div>
-    <h1>About Me</h1>
-    <h1>Projects</h1>
-    <h1>Contact</h1>
-
     {% block content %}
+
+        <div class="container start">
+            <img id="perfil" src="{% static 'images/matheus.jpeg' %}" width="150" alt="foto de matheus">
+            <div>
+                <h1>Hello, I'm Matheus</h1>
+                <p>
+                    Developer and addicted in challenges, with experience in web developer,<br> native mobile
+                    applications,
+                    data analysis and machine learning.
+                </p>
+            </div>
+        </div>
+
+        <div id="about">
+            <h2><span>About Me</span></h2>
+
+            <div class="container space-around ">
+                <div id="experience">
+                    <h3>Experience</h3>
+                    <p class="me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra, libero sit
+                        amet
+                        fermentum consectetur, nulla enim tempor diam, in accumsan eros nisl ut erat. Morbi sit amet
+                        nisl varius, sollicitudin risus eget, finibus sapien. </p>
+                    <br>
+                    <p class="me">
+                        Pellentesque nisl magna, faucibus a lacus vel, fermentum aliquet nibh. Quisque dui nisl, luctus
+                        id imperdiet sed, aliquet sit amet mauris. Integer metus odio, sagittis vitae orci a, blandit
+                        blandit felis. Praesent sodales ullamcorper purus.</p>
+                </div>
+                <div id="skills">
+                    <h3>Skills</h3>
+                    <div class="container-grid">
+                        <div class="skill">Django</div>
+                        <div class="skill">Django</div>
+                        <div class="skill">Django REST Framework</div>
+                        <div class="skill">Django</div>
+                        <div class="skill">Django</div>
+                        <div class="skill">Django</div>
+                        <div class="skill">Django</div>
+                        <div class="skill">Django</div>
+                        <div class="skill">Django</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h2><span id="projects">Projects</span></h2>
+
+            <div class="container space-evenly">
+
+                <img src="{% static 'images/projects/carro.png' %}" width="30%" alt="placa de carro reconhecida">
+                <div class="project-detail">
+                    <h4>Recognize vehicles plates with IA</h4>
+                    <p class="m-tb">Quisque dui nisl, luctus id imperdiet sed, aliquet sit amet mauris. Integer metus odio, sagittis
+                        vitae orci a, blandit blandit felis. Praesent sodales ullamcorper purus.</p>
+                    <a class="btn">View more</a>
+                </div>
+            </div>
+        </div>
+
+        <h2><span id="contact">Contact</span></h2>
 
     {% endblock %}
 </main>
 
 <footer>
-    <h2>footer</h2>
+
+    <div class="container space-between">
+
+        <div>
+            <h5>Matheus Bento</h5>
+            <p class="footer-p">
+                Developer and addicted in challenges, with experience in web developer,<br> native mobile
+                applications, data analysis and machine learning.
+            </p>
+        </div>
+        <div>
+            <h5>Social</h5>
+            <p>
+                <a><i class="fa-brands fa-github fa-lg m-r" style="color: #ffffff;"></i></a>
+                <a><i class="fa-brands fa-linkedin fa-lg m-r" style="color: #ffffff;"></i></a>
+                <a><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <p>© Copyright 2023. Made By <b>José Matheus Bento</b></p>
+
 </footer>
 
 </body>

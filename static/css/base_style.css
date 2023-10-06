@@ -11,7 +11,7 @@ header {
     padding: 20px 50px;
     justify-content: space-between;
     align-items: center;
-    box-shadow:  0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .menu li {
@@ -21,15 +21,145 @@ header {
     padding: 0 20px;
 }
 
+h1, h2, span, h5 {
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 40px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.me {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+#experience, #skills {
+    width: 40%;
+}
+
+.skill {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: fit-content;
+
+  flex: 0 0 auto;
+  margin: 0 5px 5px 0;
+
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    border-bottom: 4px solid #42b9fa;
+    border-bottom-style: dotted;
+}
+
+#about {
+    background-color: #f5f5f5;
+    padding-bottom: 40px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
 .start {
     margin-top: 18px;
+    justify-content: center;
+    align-items: center;
     background-image: url("../images/fundo.png");
 }
 
 #perfil {
     border-radius: 10%;
+    margin: 80px 30px;
 }
 
 .container {
     display: flex;
+}
+
+.container-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 95%;
+}
+
+footer {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 2vw 10vw;
+}
+
+footer > p {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer > hr {
+    margin: 20px 0;
+}
+
+.m-r {
+    margin-right: 20px;
+}
+
+.m-tb {
+
+    margin: 30px 0;
+
+}
+
+.project-detail {
+    width: 30%;
+    text-align: justify;
+}
+
+.footer-p {
+    font-size: 0.9em;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: #0d74a2;
 }
