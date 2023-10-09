@@ -60,8 +60,8 @@ h3 {
     padding: 10px 20px;
     width: fit-content;
 
-  flex: 0 0 auto;
-  margin: 0 5px 5px 0;
+    flex: 0 0 auto;
+    margin: 0 5px 5px 0;
 
 }
 
@@ -116,10 +116,10 @@ p {
 }
 
 .container-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 95%;
 }
 
 footer {
@@ -156,10 +156,40 @@ footer > hr {
     font-size: 0.9em;
 }
 
-.btn {
+button, .btn {
     text-decoration: none;
     color: white;
     border-radius: 10px;
     padding: 10px 30px;
     background-color: #0d74a2;
+}
+
+button {
+    border: none;
+    margin: auto;
+}
+
+#contact {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f5f5f5;
+}
+
+input {
+    display: block;
+    border-radius: 10px;
+    width: 90%;
+    border: none;
+    margin: 5px auto;
+    padding: 5px 20px;
+    background-color: #ececec;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
 }
