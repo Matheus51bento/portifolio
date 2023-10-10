@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;500;600;700&family=Dancing+Script:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/1585978672.js" crossorigin="anonymous"></script>
+    {% block head %}
+    {% endblock %}
 </head>
 <body>
 
@@ -77,17 +79,20 @@
         <div>
             <h2><span id="projects">Projects</span></h2>
 
-            <div class="container space-evenly">
+            {% for project in projects %}
 
-                <img src="{% static 'images/projects/carro.png' %}" width="30%" alt="placa de carro reconhecida">
-                <div class="project-detail">
-                    <h4>Recognize vehicles plates with IA</h4>
-                    <p class="m-tb">Quisque dui nisl, luctus id imperdiet sed, aliquet sit amet mauris. Integer metus
-                        odio, sagittis
-                        vitae orci a, blandit blandit felis. Praesent sodales ullamcorper purus.</p>
-                    <a class="btn">View more</a>
+                <div class="container space-evenly m-b">
+
+                    <img src="{{ project.tumb.url }}" width="30%" alt="placa de carro reconhecida">
+                    <div class="project-detail">
+                        <h4>{{ project.title }}</h4>
+                        <p class="m-tb">{{ project.description }}</p>
+                        <a class="btn" href="{% url 'detail_project' project.pk %}">View more</a>
+                    </div>
                 </div>
-            </div>
+
+            {% endfor %}
+
         </div>
 
         <div id="contact">
@@ -125,9 +130,9 @@
         <div>
             <h5>Social</h5>
             <p>
-                <a><i class="fa-brands fa-github fa-lg m-r" style="color: #ffffff;"></i></a>
-                <a><i class="fa-brands fa-linkedin fa-lg m-r" style="color: #ffffff;"></i></a>
-                <a><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Matheus51bento" target="_blank"><i class="fa-brands fa-github fa-lg m-r" style="color: #ffffff;"></i></a>
+                <a href="https://www.linkedin.com/in/matheus-bento-2a63561a3/" target="_blank"><i class="fa-brands fa-linkedin fa-lg m-r" style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/jos3matheus/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
             </p>
         </div>
     </div>

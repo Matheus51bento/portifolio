@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
-from core.models import Tool
+from django.views.generic import TemplateView, DetailView
+from core.models import Tool, Project
 
 
 class IndexView(TemplateView):
@@ -10,4 +10,11 @@ class IndexView(TemplateView):
         context = super().get_context_data(**kwargs)
         tools = Tool.objects.all()
         context['tools'] = tools
+        projects = Project.objects.all()
+        context['projects'] = projects
         return context
+
+
+class ProjectDetail(DetailView):
+    model = Project
+    template_name = 'core/project_detail.html'

@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+.live-link {
+    background-color: #1e1e1e;
+    padding: 15px 40px;
+    border-radius: 18px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    box-shadow: 0 1px 4px 2px #969696;
+    margin-bottom: 30px;
+}
+
+.live {
+    background-color: #1e1e1e;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    box-shadow: 0 1px 4px 2px #969696;
+    margin-bottom: 20px;
+}
+
+.img {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.detail-text {
+    width: 50%;
+    margin: auto;
+}
+
+.skill {
+    background-color: #e5e5e5;
+}
+
+.w {
+    padding: 20px 0;
+    background-color: #d7d7d7;
+}
+
+h3 {
+    margin: 40px 0 20px 0;
+}

@@ -69,6 +69,10 @@ h3 {
     justify-content: space-around;
 }
 
+.content-center {
+    justify-content: center;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -173,6 +177,10 @@ button {
     margin-top: 50px;
     padding-bottom: 50px;
     background-color: #f5f5f5;
+}
+
+.m-b {
+    margin-bottom: 60px;
 }
 
 input {
