@@ -183,14 +183,30 @@ button {
     margin-bottom: 60px;
 }
 
-input {
+input, textarea{
     display: block;
     border-radius: 10px;
     width: 90%;
     border: none;
     margin: 5px auto;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: #ececec;
+}
+
+.messages {
+    background-color: #006b1b;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    margin-left: 5%;
 }
 
 .card {
