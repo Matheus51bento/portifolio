@@ -75,7 +75,11 @@ h3 {
 
     flex: 0 0 auto;
     margin: 0 5px 5px 0;
+}
 
+.skill:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .space-around {
@@ -179,6 +183,11 @@ button, .btn {
     border-radius: 10px;
     padding: 10px 30px;
     background-color: #0d74a2;
+}
+
+.btn:hover {
+    background-color: #0e84bb;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 button {
