@@ -92,7 +92,9 @@
 
                 <div class="container space-evenly m-b">
 
-                    <img src="{{ project.tumb.url }}" width="30%" alt="placa de carro reconhecida">
+                    <div class="image-container">
+                        <img src="{{ project.tumb.url }}" class="project-image">
+                    </div>
                     <div class="project-detail">
                         <h4>{{ project.title }}</h4>
                         <p class="m-tb">{{ project.description }}</p>
